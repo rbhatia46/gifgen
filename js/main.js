@@ -7,7 +7,7 @@ $(document).ready(() => {
 });
 
 function getGIF(searchText){
-  axios.get("http://api.giphy.com/v1/gifs/search?q="+searchText+"&api_key=e454a5fd3bf441bfba528d22db5ad54a&limit=50")
+  axios.get("http://api.giphy.com/v1/gifs/search?q="+searchText+"&api_key=e454a5fd3bf441bfba528d22db5ad54a&limit=40")
     .then((response) => {
       console.log(response);
 	  let gifs= response.data.data;
